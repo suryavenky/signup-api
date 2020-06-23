@@ -1,0 +1,23 @@
+{
+  "name": "signup-api",
+  "version": "1.0.0",
+  "description": "You can able to create register user for the accounts specified, with all CRUD operations in it",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suryavenky/signup-api.git"
+  },
+  "author": "Surya Venkatapathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suryavenky/signup-api/issues"
+  },
+  "homepage": "https://github.com/suryavenky/signup-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20"
+  }
+}
