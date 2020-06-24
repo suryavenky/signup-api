@@ -3,7 +3,7 @@ services:
     signup-api:
         image: signup-api
         build: ./api
-        command: node index.js
+        command: npm run start
         ports:
             - "3000:3000"
         depends_on:
@@ -11,7 +11,7 @@ services:
         volumes:
             - /usr/src/app/node_modules
             - ./api:/usr/src/app
-            
+
     mongo:
         image: "mongo"
         ports:

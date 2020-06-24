@@ -1,4 +1,4 @@
-console.log("app starting...!")
+console.log("app starting...!");
 const express = require('express');
 const database = require('./database');
 const app = express();
@@ -6,7 +6,7 @@ const app = express();
 database.initializeMongo();
 
 app.get('/', function(req, res){
-    res.send('hello world');
+    res.send('Hello worlds');
 })
 
 app.listen(3000, function(){
