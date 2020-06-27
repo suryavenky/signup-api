@@ -4,7 +4,7 @@
   "description": "You can able to create register user for the accounts specified, with all CRUD operations in it",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,10 +18,17 @@
   },
   "homepage": "https://github.com/suryavenky/signup-api#readme",
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "accesscontrol": "^2.2.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.20"
   },
   "devDependencies": {
+    "handlebars": "^4.7.6",
     "nodemon": "^2.0.4"
   }
 }

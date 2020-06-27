@@ -1,0 +1,41 @@
+
+<form action="/user" method="POST" autocomplete="off" style="margin-left:20%; margin-right: 20%;">
+  <h1><span class="label label-primary">{{viewTitle}}</span></h1>
+  <input type="hidden" name="_id" value={{user._id}}>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputFirstName">First name</label>
+      <input type="text" name="firstName" class="form-control"  id="inputFirstName" value={{user.firstName}}>
+      <div class="text-danger">{{user.fullNameError}}</div>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputLastName">Last name</label>
+      <input type="text" name="lastName" class="form-control"  id="inputLastName" value={{user.lastName}}>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" name="email" class="form-control"  id="inputEmail4" placeholder="Email" value={{user.email}}>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" name="password" class="form-control"  id="inputPassword4" placeholder="Password" value={{user.password}}>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAccount">Account</label>
+    <input type="text" name="companyName" class="form-control" id="inputAccount" placeholder="Company Name" value={{user.companyName}}>
+  </div>
+  <div class="form-group">
+    <label for="inputCity">City</label>
+    <input type="text" name="city" class="form-control" id="inputCity" value={{user.city}}>
+  </div>
+  <div class="form-group">
+    <label for="inputCity">Mobile</label>
+    <input type="text" name="mobile" class="form-control" id="inputMobile" value={{user.mobile}}>
+  </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Add User</button>
+  <a href="/user/list">
+    <button type="button" class="btn btn-link">View List</button>
+  </a>
+</form>

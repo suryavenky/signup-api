@@ -1,0 +1,38 @@
+<div>
+    <h3>User List</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>email</th>
+                <th>mobile</th>
+                <th>companyname</th>
+                <th></th>
+                {{!-- <th>city</th> --}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <td>{{this.firstName}}</td>
+                <td>{{this.lastName}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.mobile}}</td>
+                <td>{{this.companyName}}</td>
+                <td>
+                    <a href="/user/{{this._id}}">
+                        <button type="button" class="btn btn-dark">Edit</button>
+                    </a>
+                    <a href="/user/delete/{{this._id}}" onclick="return confirm('Are you sure wanna delete?')">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <a href="/user">
+        <button type="button" class="btn btn-primary">Create new</button>
+    </a>
+</div>

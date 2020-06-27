@@ -4,6 +4,7 @@ services:
         image: signup-api
         build: ./api
         command: npm run start
+        env_file: .env
         ports:
             - "3000:3000"
         depends_on:
@@ -19,5 +20,8 @@ services:
 
     adminmongo:
         image: "mrvautin/adminmongo"
+        # command: npm start
         ports:
             - "1234:1234"
+        environment:
+            - HOST=0.0.0.0
